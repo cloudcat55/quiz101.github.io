@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body background="1061.png">
+    <div class="header">
+        <h1> General Knowledge 101 </h1>
+    </div>
+
+    <div class="quiz-container">
+        <div class="progress-bar-container" id="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div id="question" class="question">Question will be displayed here. Click START to begin!</div>
+
+        <div class="option-container" id="option-container"></div>
+
+        <!--timer settings dropdown-->
+        <div id="timer-settings-label">Choose timer duration: </div>
+        <select id="timer-settings">
+            <option value="10">10 seconds</option>
+            <option value="15">15 seconds</option>
+            <option value="20">20 seconds</option>
+        </select>
+        
+        <p class="feedback" id="feedback"></p>
+        <p class="result" id="result">You scored 0 point(s)</p>
+
+        <button id="start-btn" class="start-btn">START</button>
+    </div>
+
+    <div class="timer" id="timer">
+        <div id="timerText">10</div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
